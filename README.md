@@ -58,6 +58,13 @@ gpg --search-keys t3hami@gmail.com
 gpg --recv-keys 6CCDC54DB29B4E9C
 ```
 
+### Trust imported public key
+```
+gpg --edit-key t3hami@gmail.com
+trust (Now give any number depending on how much trust you have, it's usually 4 or 5)
+save
+```
+
 ### Export private key:
 ```
 gpg --export-secret-keys t3hami@gmail.com > private.key
@@ -123,4 +130,5 @@ git tag v1.3 -v
 - https://makandracards.com/makandra-orga/37763-gpg-extract-private-key-and-import-on-different-machine
 - https://www.youtube.com/watch?v=4166ExAnxmo&t=1s
 - https://access.redhat.com/solutions/2115511 (Import all keys to new machine)
+- https://stackoverflow.com/questions/13116457/how-to-make-auto-trust-gpg-public-key
 
